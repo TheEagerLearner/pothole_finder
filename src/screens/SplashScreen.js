@@ -1,5 +1,5 @@
 import React from 'react';
-import { View,StyleSheet,Text } from 'react-native';
+import { View,StyleSheet,Text,Image } from 'react-native';
 
 const SplashScreen = ({navigation}) => {
 
@@ -11,7 +11,20 @@ const SplashScreen = ({navigation}) => {
     return(
         <View style={stylesheet.container}>
 
-            <Text>Splash Screen</Text>
+            <Image 
+                style={stylesheet.background_image}
+                source={require('./../Images/pothole.jpg')}    
+            />
+            <Text
+                style={{
+                    position:'absolute',
+                    top:40,
+                    fontSize:42,
+                    fontWeight:'bold'
+                }}
+            >
+                Pothole Finder
+            </Text>
 
         </View>
     );
@@ -21,7 +34,13 @@ const stylesheet = StyleSheet.create({
     container:{
         flex:1,
         justifyContent:'center',
-        alignItems:'center'
+        alignItems:'center',
+        backgroundColor:'#fff'
+        
+    },
+    background_image:{
+        
+        
     }
 
 });
