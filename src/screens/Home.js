@@ -1,11 +1,14 @@
 import React from "react";
-import {View,StyleSheet,Text} from 'react-native';
+import {View,StyleSheet,Dimensions} from 'react-native';
+
+//for maps
+import MapView from 'react-native-maps';
 
 const Home = () => {
 
     return(
         <View style={stylesheet.container}>
-            <Text>Home Screen</Text>
+            <MapView style={stylesheet.map} />
         </View>
     );
 }
@@ -15,7 +18,11 @@ const stylesheet = StyleSheet.create({
         flex:1,
         justifyContent:"center",
         alignItems:"center"
-    }
+    },
+    map: {
+      width: Dimensions.get('window').width,
+      height: Dimensions.get('window').height,
+    },
 });
 
 
