@@ -23,7 +23,7 @@ const SplashScreen = ({navigation}) => {
                     fontWeight:'bold'
                 }}
             >
-                Pothole Finder
+                Pothole findeerr
             </Text>
 
         </View>
