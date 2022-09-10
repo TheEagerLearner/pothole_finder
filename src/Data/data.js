@@ -1,4 +1,4 @@
-const data = {
+var data = {
     "data":{
         "Vasco":{
             "latitude":[
